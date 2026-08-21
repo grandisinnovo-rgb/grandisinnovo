@@ -107,62 +107,6 @@ export function StaggerItem({
   );
 }
 
-interface ScaleOnHoverProps {
-  children: React.ReactNode;
-  className?: string;
-  scale?: number;
-}
-
-export function ScaleOnHover({ children, className, scale = 1.03 }: ScaleOnHoverProps) {
-  return (
-    <motion.div
-      className={className}
-      whileHover={{ scale }}
-      transition={{ duration: 0.2, ease: "easeOut" }}
-    >
-      {children}
-    </motion.div>
-  );
-}
-
-interface CounterProps {
-  end: number;
-  suffix?: string;
-  prefix?: string;
-  duration?: number;
-  className?: string;
-}
-
-export function AnimatedCounter({
-  end,
-  suffix = "",
-  prefix = "",
-  duration = 2,
-  className,
-}: CounterProps) {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true });
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    if (!inView) return;
-    let startTime: number | null = null;
-    const step = (timestamp: number) => {
-      if (!startTime) startTime = timestamp;
-      const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
-      setCount(Math.floor(progress * end));
-      if (progress < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  }, [inView, end, duration]);
-
-  return (
-    <span ref={ref} className={className}>
-      {prefix}{count}{suffix}
-    </span>
-  );
-}
-
 export function SectionBadge({
   children,
   className,
