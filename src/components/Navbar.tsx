@@ -12,9 +12,12 @@ import { REG_NO } from "@/lib/data";
 
 const navLinks = [
   { href: "/about", label: "About" },
+  { href: "/team", label: "Team" },
   { href: "/services", label: "Services" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/why-us", label: "Why Choose Us" },
   { href: "/portfolio", label: "Portfolio" },
+  { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -56,7 +59,7 @@ export default function Navbar({ promoVisible = true }: { promoVisible?: boolean
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
             <div className="relative w-9 h-9">
-              <Image src="/GI LOG.svg" alt="Grandis Innovo logo" fill className="object-contain" />
+              <Image src="/GI LOG.svg" alt="Grandis Innovo logo" fill sizes="36px" className="object-contain" />
             </div>
             <div className="leading-none">
               <span className="font-display font-extrabold text-lg text-[var(--text-primary)] tracking-tight block">
@@ -69,7 +72,7 @@ export default function Navbar({ promoVisible = true }: { promoVisible?: boolean
           </Link>
 
           {/* Desktop Links */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-5 xl:gap-7">
             {navLinks.map((link) => (
               <Link
                 key={link.href}

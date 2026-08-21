@@ -35,7 +35,7 @@ export default function ContactPage() {
                 <span className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "linear-gradient(135deg,#283889,#4a6cf7)" }}>
                   <Mail className="w-4 h-4 text-white" />
                 </span>
-                grandisinnovo@gmail.com
+                grandisinovo@gmail.com
               </a>
               <a href="tel:+2349000000000" className="flex items-center gap-3 text-sm text-[var(--text-secondary)]">
                 <span className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "linear-gradient(135deg,#283889,#4a6cf7)" }}>

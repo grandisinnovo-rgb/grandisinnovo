@@ -112,7 +112,7 @@ export default function CustomCursor() {
           opacity: visible ? 1 : 0,
           scale: clicked ? 0.85 : 1,
           borderColor: hovered ? "rgba(74,108,247,0.75)" : "rgba(40,56,137,0.45)",
-          backgroundColor: hovered ? "rgba(74,108,247,0.07)" : "transparent",
+          backgroundColor: hovered ? "rgba(74,108,247,0.07)" : "rgba(74,108,247,0)",
         }}
         transition={{
           width:  { duration: 0.28, ease: [0.22, 1, 0.36, 1] },

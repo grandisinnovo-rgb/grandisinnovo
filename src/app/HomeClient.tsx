@@ -326,7 +326,7 @@ export default function HomeClient() {
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="text-[var(--text-secondary)] text-lg max-w-2xl mx-auto">
-                One partner, complete solutions. We cover all your tech needs so you can focus on what matters most  growing your business.
+                One partner, complete solutions. We cover all your tech needs so you can focus on what matters most growing your business.
               </p>
             </FadeIn>
           </div>
@@ -457,6 +457,7 @@ export default function HomeClient() {
                         src={project.image}
                         alt={project.title}
                         fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
                         className="object-cover transition-transform duration-300 group-hover:scale-110"
                       />
                       <div className="absolute top-4 left-4">

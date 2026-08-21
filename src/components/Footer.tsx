@@ -20,9 +20,12 @@ import {
 const footerLinks = {
   company: [
     { label: "About Us", href: "/about" },
+    { label: "Our Team", href: "/team" },
     { label: "Our Services", href: "/services" },
+    { label: "Pricing", href: "/pricing" },
     { label: "Why Choose Us", href: "/why-us" },
     { label: "Portfolio", href: "/portfolio" },
+    { label: "FAQ", href: "/faq" },
     { label: "Contact", href: "/contact" },
   ],
   services: [
@@ -74,7 +77,7 @@ export default function Footer() {
           <div className="lg:col-span-1 flex flex-col items-center">
             <Link href="/" className="flex items-center gap-2.5 mb-5 group w-fit">
               <div className="relative w-9 h-9">
-                <Image src="/GI LOG.svg" alt="Grandis Innovo logo" fill className="object-contain" />
+                <Image src="/GI LOG.svg" alt="Grandis Innovo logo" fill sizes="36px" className="object-contain" />
               </div>
               <div className="leading-none">
                 <span className="font-display font-extrabold text-lg text-[var(--text-primary)] tracking-tight block">
@@ -94,7 +97,7 @@ export default function Footer() {
             {/* Contact info */}
             <div className="flex flex-col items-center gap-2.5">
               {[
-                { icon: Mail, text: "grandisinnovo.c@gmailom" },
+                { icon: Mail, text: "grandisinovo@gmail.com" },
                 { icon: Phone, text: "+234 9133393983" },
                 { icon: MapPin, text: "Abuja, Nigeria" },
               ].map(({ icon: Icon, text }) => (

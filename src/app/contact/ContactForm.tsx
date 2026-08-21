@@ -102,7 +102,7 @@ export default function ContactForm() {
       <div role="status" aria-live="polite">
         {status === "success" && (
           <p className="flex items-center gap-2 text-sm text-emerald-500">
-            <CheckCircle2 className="w-4 h-4" /> Message sent we&apos;ll reply within one business day.
+            <CheckCircle2 className="w-4 h-4" /> Message sent — we&apos;ll reply within one business day.
           </p>
         )}
         {status === "error" && (

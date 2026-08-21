@@ -6,9 +6,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     "",
     "/about",
+    "/team",
     "/services",
+    "/pricing",
     "/why-us",
     "/portfolio",
+    "/faq",
     "/contact",
   ].map((route) => ({
     url: `${siteUrl}${route}`,

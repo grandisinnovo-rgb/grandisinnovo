@@ -11,4 +11,3 @@ export function getResendClient() {
 }
 
 export const EMAIL_FROM = "Grandis Innovo <notifications@grandisinnovo.com>"; // must be a verified Resend domain
-export const EMAIL_TO_TEAM = process.env.CONTACT_NOTIFY_EMAIL ?? "hello@grandisinovo.com";
