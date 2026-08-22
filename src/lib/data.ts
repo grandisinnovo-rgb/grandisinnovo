@@ -56,14 +56,14 @@ export const team: TeamMember[] = [
     social: { linkedin: "https://www.linkedin.com/in/ini-toma1/", github: "https://github.com/initom332" },
   },
     {
-    name: "Ann Haa Fatema",
+    name: "Ann Haa Fateman",
     role: "Social Media Manager, Promoter & Marketer",
     bio: "Helping businesses grow through strategic marketing, branding, and digital engagement.",
     photo: "/team/ann-haa-fatema.png",
     social: { linkedin: "https://www.linkedin.com/in/ann-haa-5802b735b/", },
   },
   {
-    name: "Daniel Shaku Jimjel",
+    name: "Daniel Ishaku Jimjel",
     role: "Co-Founder | Lead Product Designer",
     bio: "Creating intuitive and premium digital experiences that users love.",
     photo: "/team/daniel-shaku-jimjel.png",
