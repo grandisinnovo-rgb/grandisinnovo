@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Bot } from "lucide-react";
 
 const items = [
-  "🤖  Built with AI-Assisted Development — powered by Claude & ChatGPT",
+  "🤖  Built with AI-Assisted Development — powered by Claude, ChatGPT, CoPilot e.t.c",
   "⚡  Faster builds, smarter workflows — without cutting corners on quality",
   "🧠  From idea to launch, accelerated by modern AI tools",
   "🚀  AI-Assisted. Human-Directed. Startup-Friendly Pricing.",
