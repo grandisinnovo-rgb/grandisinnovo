@@ -89,21 +89,34 @@ export const portfolioHighlights = [
   { title: "CareConnect", category: "Full Stack Development", description: "A telehealth platform simplifying doctor discovery, transparent pricing, and appointment booking.", tech: ["Figma", "React", "Tailwind"], color: "#283889", Icon: Palette, image: "/portfolio/pro4.png", link: "https://exquisite-dieffenbachia-fc08cc.netlify.app" },
 ];
 
+// Update this when the rate moves meaningfully — approximate mid-market rate,
+// checked August 2026 (~₦1,350 / $1). USD figures shown on the site are
+// rounded estimates for reference only, not exact invoicing amounts.
+export const USD_TO_NGN_RATE = 1350;
+
+export function formatPrice(ngn: number | null): string {
+  if (ngn === null) return "Custom Quote";
+  const usd = Math.round(ngn / USD_TO_NGN_RATE / 10) * 10; // round to nearest $10
+  return `₦${ngn.toLocaleString()} (~$${usd.toLocaleString()})`;
+}
+
 export type PricingPlan = {
   name: string;
   audience: string;
-  price: string;
+  priceNGN: number | null;
   installment: string;
   features: string[];
   highlighted: boolean;
 };
 
-// Prices are placeholders — replace with real figures before launch.
+// NGN prices are placeholders — replace with real figures before launch.
+// USD equivalents are derived automatically via formatPrice() / USD_TO_NGN_RATE
+// above, so you only ever need to update the Naira figure in one place.
 export const pricingPlans: PricingPlan[] = [
   {
     name: "Starter",
     audience: "Best for startups",
-    price: "₦400,000",
+    priceNGN: 400000,
     installment: "Pay in 2 installments",
     features: [
       "Up to 5 pages",
@@ -117,7 +130,7 @@ export const pricingPlans: PricingPlan[] = [
   {
     name: "Business",
     audience: "Best for SMEs",
-    price: "₦850,000",
+    priceNGN: 850000,
     installment: "Flexible installment plan available",
     features: [
       "Up to 12 pages",
@@ -132,7 +145,7 @@ export const pricingPlans: PricingPlan[] = [
   {
     name: "Premium",
     audience: "Best for enterprise clients",
-    price: "Custom quote",
+    priceNGN: null,
     installment: "Flexible installment plans available",
     features: [
       "Unlimited pages",

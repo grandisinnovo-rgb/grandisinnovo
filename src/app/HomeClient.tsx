@@ -9,6 +9,7 @@ import {
   ChevronRight, ExternalLink,
 } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem, SectionBadge } from "@/components/ui/Motion";
+import { AIWorkflowMarquee } from "@/components/AIWorkflowMarquee";
 import { services, whyPoints, portfolioHighlights } from "@/lib/data";
 
 /* ─── Data ───────────────────────────────────────────────────────────────── */
@@ -293,6 +294,8 @@ export default function HomeClient() {
           </motion.div>
         </motion.div>
       </section>
+
+      <AIWorkflowMarquee />
 
       {/* ═══════════════════════════════════════════ STATS ══ */}
       <section className="py-16 bg-[var(--bg-secondary)] relative overflow-hidden">

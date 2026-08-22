@@ -5,11 +5,11 @@ import Link from "next/link";
 import { X, Zap, ArrowRight } from "lucide-react";
 
 const ticker = [
-  "🚀  Get your website & full online presence live within days from ₦400,000 paid in easy installments",
+  "🚀  Get your website & full online presence live within days from ₦400,000 (~$300) paid in easy installments",
   "⚡  Limited launch slots available Book your free consultation now",
   "🎉  Grandis Innovo is officially live! Web • Mobile Apps • Design • Tech Support",
   "💳  No heavy upfront cost Flexible installment plans for every budget",
-  "🌐  Professional websites from ₦400,000 Installment friendly, results guaranteed",
+  "🌐  Professional websites from ₦400,000 (~$300) — Installment friendly, results guaranteed",
 ];
 
 // Presentational only — HeaderWrapper is the single source of truth for

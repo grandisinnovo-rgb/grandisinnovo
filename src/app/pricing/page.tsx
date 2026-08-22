@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Check, CalendarClock } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem, SectionBadge } from "@/components/ui/Motion";
-import { pricingPlans } from "@/lib/data";
+import { pricingPlans, formatPrice } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -44,7 +44,7 @@ export default function PricingPage() {
                 <h2 className="font-display font-bold text-xl text-[var(--text-primary)]">{plan.name}</h2>
                 <p className="text-sm text-[var(--text-muted)] mt-1">{plan.audience}</p>
 
-                <p className="font-display font-extrabold text-3xl text-[var(--text-primary)] mt-6">{plan.price}</p>
+                <p className="font-display font-extrabold text-2xl text-[var(--text-primary)] mt-6">{formatPrice(plan.priceNGN)}</p>
 
                 <p className="flex items-center gap-1.5 text-xs font-medium text-brand-blue dark:text-[#4a6cf7] mt-2">
                   <CalendarClock className="w-3.5 h-3.5" />
