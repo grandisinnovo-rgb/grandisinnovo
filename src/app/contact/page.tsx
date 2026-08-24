@@ -31,13 +31,13 @@ export default function ContactPage() {
         <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 max-w-5xl mx-auto">
           <FadeIn direction="left" className="space-y-4">
             <div className="card-base p-6 space-y-5">
-              <a href="mailto:hello@grandisinovo.com" className="flex items-center gap-3 text-sm text-[var(--text-secondary)]">
+              <a href="mailto:grandisinovo@gmail.com" className="flex items-center gap-3 text-sm text-[var(--text-secondary)]">
                 <span className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "linear-gradient(135deg,#283889,#4a6cf7)" }}>
                   <Mail className="w-4 h-4 text-white" />
                 </span>
                 grandisinovo@gmail.com
               </a>
-              <a href="tel:+2349000000000" className="flex items-center gap-3 text-sm text-[var(--text-secondary)]">
+              <a href="tel:+2349133393983" className="flex items-center gap-3 text-sm text-[var(--text-secondary)]">
                 <span className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "linear-gradient(135deg,#283889,#4a6cf7)" }}>
                   <Phone className="w-4 h-4 text-white" />
                 </span>
