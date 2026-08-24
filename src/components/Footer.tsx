@@ -36,9 +36,9 @@ const footerLinks = {
     { label: "PC Sales & Supply", href: "/services#sales" },
   ],
   social: [
-    { icon: Twitter, label: "Twitter", href: "#" },
+    { icon: Twitter, label: "Twitter", href: "https://x.com/GrandisInnovo" },
     { icon: Linkedin, label: "LinkedIn", href: "#" },
-    { icon: Github, label: "GitHub", href: "#" },
+    { icon: Github, label: "GitHub", href: "https://github.com/grandisinnovo-rgb/grandisinnovo" },
     { icon: Instagram, label: "Instagram", href: "#" },
   ],
 };
