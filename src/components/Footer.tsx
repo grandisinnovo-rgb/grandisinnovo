@@ -37,7 +37,7 @@ const footerLinks = {
   ],
   social: [
     { icon: Twitter, label: "Twitter", href: "https://x.com/GrandisInnovo" },
-    { icon: Linkedin, label: "LinkedIn", href: "#" },
+    { icon: Facebook, label: "Facebook", href: "#" },
     { icon: Github, label: "GitHub", href: "https://github.com/grandisinnovo-rgb/grandisinnovo" },
     { icon: Instagram, label: "Instagram", href: "#" },
   ],
