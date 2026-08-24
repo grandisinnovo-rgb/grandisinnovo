@@ -38,7 +38,7 @@ const footerLinks = {
   social: [
     { icon: Twitter, label: "Twitter", href: "#" },
     { icon: Linkedin, label: "LinkedIn", href: "#" },
-    { icon: Github, label: "GitHub", href: "https://github.com/grandisinnovo-rgb" },
+    { icon: Github, label: "GitHub", href: "#" },
     { icon: Instagram, label: "Instagram", href: "#" },
   ],
 };
@@ -208,16 +208,19 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[var(--border-color)] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-[var(--text-muted)]">
-            © {new Date().getFullYear()} Grandis Innovo. All rights reserved.
+            © {new Date().getFullYear()} Grandis Innovo Digital Services. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            {["Privacy Policy", "Terms of Service", "Cookie Policy"].map((item) => (
+            {[
+              { label: "Privacy Policy", href: "/privacy" },
+              { label: "Terms of Service", href: "/terms" },
+            ].map((item) => (
               <Link
-                key={item}
-                href="#"
+                key={item.label}
+                href={item.href}
                 className="text-xs text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors"
               >
-                {item}
+                {item.label}
               </Link>
             ))}
           </div>
