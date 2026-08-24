@@ -20,7 +20,7 @@
 
 ## 👋 About Grandis Innovo
 
-**Grandis Innovo** is a technology and digital solutions company focused on helping businesses and individuals transform ideas into powerful digital experiences.
+**Grandis Innovo Digital Services** is a technology and digital solutions company focused on helping businesses and individuals transform ideas into powerful digital experiences.
 
 We combine **technology, creativity, design, and engineering** to build solutions that are practical, scalable, beautiful, and focused on real business results.
 
