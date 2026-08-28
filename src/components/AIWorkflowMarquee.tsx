@@ -1,14 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Bot } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 const items = [
-  "🤖  Built with AI-Assisted Development — powered by Claude, ChatGPT, CoPilot e.t.c",
-  "⚡  Faster builds, smarter workflows — without cutting corners on quality",
-  "🧠  From idea to launch, accelerated by modern AI tools",
-  "🚀  AI-Assisted. Human-Directed. Startup-Friendly Pricing.",
-  "💡  We build with Claude & ChatGPT, so you get speed and quality",
+  "Built with AI-Assisted Development — powered by Claude, ChatGPT & Copilot",
+  "Faster builds, smarter workflows — without cutting corners on quality",
+  "From idea to launch, accelerated by modern AI tools",
+  "AI-Assisted. Human-Directed. Startup-Friendly Pricing.",
+  "We build with AI, so you get speed and quality",
 ];
 
 /**
@@ -18,32 +18,33 @@ const items = [
  * elsewhere on the site (fast turnaround, startup-friendly pricing) with the
  * actual reason those are possible, instead of asserting a standalone
  * "AI company" identity.
+ *
+ * Deliberately styled as a light frosted-glass panel rather than the dark
+ * gradient used elsewhere (PromoBar, Hero) — it's meant to visually break up
+ * the page rhythm and stand out as its own moment, not blend into either the
+ * light or dark theme.
  */
 export function AIWorkflowMarquee() {
   return (
-    <div className="relative overflow-hidden border-y border-[var(--border-color)]">
+    <div className="relative overflow-hidden border-y border-white/40">
+      {/* Soft brand-tinted glow behind the glass, visible through the blur */}
       <div
         className="absolute inset-0"
         style={{
-          background: "linear-gradient(90deg, #1a2460 0%, #283889 25%, #3f1119 60%, #1a2460 100%)",
+          background:
+            "linear-gradient(90deg, rgba(40,56,137,0.35) 0%, rgba(74,108,247,0.35) 35%, rgba(63,17,25,0.3) 70%, rgba(40,56,137,0.35) 100%)",
           backgroundSize: "300% 100%",
-          animation: "promoBgShift 10s ease-in-out infinite",
+          animation: "promoBgShift 12s ease-in-out infinite",
         }}
       />
-      <div
-        className="absolute inset-0 opacity-[0.06] pointer-events-none"
-        style={{
-          backgroundImage:
-            "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
-        }}
-      />
+      {/* Frosted glass layer */}
+      <div className="absolute inset-0 bg-white/60 dark:bg-white/[0.07] backdrop-blur-xl" />
 
-      <div className="relative flex items-center h-12 z-10">
-        <div className="hidden sm:flex items-center gap-1.5 h-full px-4 border-r border-white/15 flex-shrink-0 bg-white/10 backdrop-blur-sm">
-          <Bot className="w-3.5 h-3.5 text-amber-300 flex-shrink-0" />
+      <div className="relative flex items-center h-20 sm:h-24 z-10">
+        <div className="hidden sm:flex items-center gap-2 h-full px-6 border-r border-[var(--border-color)] flex-shrink-0 bg-white/40 dark:bg-white/5 backdrop-blur-sm">
+          <Sparkles className="w-5 h-5 text-brand-blue dark:text-[#4a6cf7] flex-shrink-0" />
           <span
-            className="text-white font-semibold text-[10px] uppercase tracking-[0.15em] whitespace-nowrap"
-            style={{ fontFamily: "var(--font-syne)" }}
+            className="font-display font-extrabold text-sm uppercase tracking-[0.15em] text-[var(--text-primary)] whitespace-nowrap"
           >
             How We Build
           </span>
@@ -51,17 +52,16 @@ export function AIWorkflowMarquee() {
 
         <div className="flex-1 overflow-hidden">
           <motion.div
-            className="flex items-center gap-16 whitespace-nowrap"
+            className="flex items-center gap-20 whitespace-nowrap"
             animate={{ x: ["2%", "-50%"] }}
-            transition={{ duration: 34, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 32, repeat: Infinity, ease: "linear" }}
           >
             {[...items, ...items].map((item, i) => (
               <span
                 key={i}
-                className="text-white/90 text-xs inline-flex items-center gap-3 flex-shrink-0"
-                style={{ fontFamily: "var(--font-dm)" }}
+                className="font-display font-bold text-lg sm:text-xl inline-flex items-center gap-4 flex-shrink-0 text-[var(--text-primary)]"
               >
-                <span className="w-1 h-1 rounded-full bg-amber-400 flex-shrink-0" />
+                <span className="w-2 h-2 rounded-full bg-brand-blue dark:bg-[#4a6cf7] flex-shrink-0" />
                 {item}
               </span>
             ))}
