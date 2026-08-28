@@ -4,10 +4,7 @@ import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 
 const items = [
-  "Built with AI-Assisted Development — powered by Claude, ChatGPT & Copilot",
-  "Faster builds, smarter workflows — without cutting corners on quality",
-  "From idea to launch, accelerated by modern AI tools",
-  "AI-Assisted. Human-Directed. Startup-Friendly Pricing.",
+  "Grandis Innovo accelerates digital product delivery by combining AI assisted development powered by tools like Claude, ChatGPT, and Copilot with expert human direction. This hybrid workflow enables faster builds and smarter execution from concept to launch, ensuring high quality websites and mobile apps at startup friendly pricing without compromising excellence.",
   "We build with AI, so you get speed and quality",
 ];
 
