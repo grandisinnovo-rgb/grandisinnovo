@@ -65,7 +65,7 @@ export default function Navbar({ promoVisible = true }: { promoVisible?: boolean
               <span className="font-display font-extrabold text-lg text-[var(--text-primary)] tracking-tight block">
                 Grandis
               </span>
-              <span className="font-display font-semibold text-xs text-brand-blue dark:text-[#4a6cf7] tracking-widest uppercase">
+              <span className="font-display font-semibold text-xs text-brand-blue dark:text-[#4a6cf7] tracking-widest uppercase -mt-1 block">
                 Innovo
               </span>
             </div>
