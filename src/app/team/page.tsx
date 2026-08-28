@@ -39,14 +39,38 @@ export default function TeamPage() {
             >
               <div className="card-base overflow-hidden h-full text-center group">
                 <div className="relative aspect-square overflow-hidden">
-                  <Image
-                    src={member.photo}
-                    alt={member.name}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    className="object-cover blur-md scale-105 transition-all duration-500 ease-out group-hover:blur-none group-hover:scale-100 group-focus-within:blur-none group-focus-within:scale-100"
-                  />
-                  <div className="absolute inset-0 bg-[var(--bg-secondary)]/40 transition-opacity duration-500 group-hover:opacity-0 group-focus-within:opacity-0" />
+                  {member.photoHover ? (
+                    <>
+                      {/* Primary photo — visible by default, fades out on hover/focus */}
+                      <Image
+                        src={member.photo}
+                        alt={member.name}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        className="object-cover transition-opacity duration-500 ease-out group-hover:opacity-0 group-focus-within:opacity-0"
+                      />
+                      {/* Second photo — hidden by default, crossfades in on hover/focus */}
+                      <Image
+                        src={member.photoHover}
+                        alt={`${member.name} (alternate)`}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        className="object-cover absolute inset-0 opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 group-focus-within:opacity-100"
+                      />
+                    </>
+                  ) : (
+                    <>
+                      {/* No second photo provided — falls back to the blur-reveal treatment */}
+                      <Image
+                        src={member.photo}
+                        alt={member.name}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        className="object-cover blur-md scale-105 transition-all duration-500 ease-out group-hover:blur-none group-hover:scale-100 group-focus-within:blur-none group-focus-within:scale-100"
+                      />
+                      <div className="absolute inset-0 bg-[var(--bg-secondary)]/40 transition-opacity duration-500 group-hover:opacity-0 group-focus-within:opacity-0" />
+                    </>
+                  )}
                 </div>
                 <div className="p-5">
                   <h2 className="font-display font-bold text-[var(--text-primary)] mb-1">{member.name}</h2>
