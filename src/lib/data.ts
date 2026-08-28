@@ -44,6 +44,7 @@ export type TeamMember = {
   role: string;
   bio: string;
   photo: string;
+  photoHover?: string; // optional — if set, crossfades to this image on hover/focus instead of the blur reveal
   social: { linkedin?: string; twitter?: string; github?: string; instagram?: string; facebook?: string };
 };
 
@@ -53,20 +54,23 @@ export const team: TeamMember[] = [
     role: "CEO & Founder | Web Developer",
     bio: "Leading Grandis Innovo's vision by building innovative and scalable digital solutions.",
     photo: "/team/ini-tom.png",
+    photoHover: "/team/ini-tom-hover.png",
     social: { linkedin: "https://www.linkedin.com/in/ini-toma1/", github: "https://github.com/initom332" },
   },
     {
-    name: "Ann Haa Fateman",
+    name: "Ann Haa Fatema",
     role: "Social Media Manager, Promoter & Marketer",
     bio: "Helping businesses grow through strategic marketing, branding, and digital engagement.",
     photo: "/team/ann-haa-fatema.png",
+    photoHover: "/team/ann-haa-fatema-hover.png",
     social: { linkedin: "https://www.linkedin.com/in/ann-haa-5802b735b/", },
   },
   {
-    name: "Daniel Ishaku Jimjel",
+    name: "Daniel Shaku Jimjel",
     role: "Co-Founder | Lead Product Designer",
     bio: "Creating intuitive and premium digital experiences that users love.",
     photo: "/team/daniel-shaku-jimjel.png",
+    photoHover: "/team/daniel-shaku-jimjel-hover.png",
     social: { linkedin: "https://www.linkedin.com/in/jimjel-daniel-ishaku-35a65b236/", },
   },
 
@@ -80,9 +84,11 @@ export const whyPoints = [
 ];
 
 export const portfolioHighlights = [
+  { title: "MindEase Dashboard", category: "Dashboard Development", description: "A mental health dashboard combining client communication, assessments, and therapeutic resources.", tech: ["Next.js", "Node.js", "Stripe"], color: "#283889", Icon: Globe, image: "/portfolio/mindcare.png", link: "#" },
   { title: "VendorOps Dashboard", category: "Dashboard Development", description: "An inventory dashboard for monitoring stock, identifying shortages, and managing restocking workflows.", tech: ["React Native", "Firebase", "Paystack"], color: "#3f1119", Icon: Smartphone, image: "/portfolio/pro5.png", link: "https://creative-manatee-4c0e4e.netlify.app" },
   { title: "MediCore Dashboard", category: "UI/UX Design", description: "A clinical dashboard for monitoring healthcare data, laboratory results, and operational activity.", tech: ["Figma", "React", "Tailwind"], color: "#283889", Icon: Palette, image: "/portfolio/pro1.png", link: "https://astounding-stroopwafel-6cdb42.netlify.app" },
   { title: "ATELIER Website", category: "Web Development", description: "A full-stack refined interior design portfolio showcasing services, projects, design philosophy, and client inquiries.", tech: ["Next.js", "Node.js", "Stripe"], color: "#283889", Icon: Globe, image: "/portfolio/pro3.png", link: "https://tubular-sherbet-a3fd5f.netlify.app" },
+  { title: "Handyman", category: "Web Development", description: "A cross platform service marketplace for discovering, booking, and managing trusted home-service professionals.", tech: ["React Native", "Firebase", "Paystack"], color: "#3f1119", Icon: Smartphone, image: "/portfolio/handyman.png", link: "https://handsome-sorbet-3c1a2b.netlify.app" },
   { title: "SparkleClean", category: "UI/UX Design", description: "A data rich modern cleaning service website built around service discovery, online booking, and customer trust.", tech: ["Figma", "React", "Tailwind"], color: "#283889", Icon: Palette, image: "/portfolio/pro2.png", link: "https://eclectic-salmiakki-48dc65.netlify.app" },
   { title: "CareConnect", category: "Full Stack Development", description: "A telehealth platform simplifying doctor discovery, transparent pricing, and appointment booking.", tech: ["Figma", "React", "Tailwind"], color: "#283889", Icon: Palette, image: "/portfolio/pro4.png", link: "https://exquisite-dieffenbachia-fc08cc.netlify.app" },
 ];
