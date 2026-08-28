@@ -61,7 +61,7 @@ export const team: TeamMember[] = [
     name: "Ann Haa Fatema",
     role: "Social Media Manager, Promoter & Marketer",
     bio: "Helping businesses grow through strategic marketing, branding, and digital engagement.",
-    photo: "/team/ann-haa-fatema.png",
+    photo: "/team/ann-haa-fatema.jpeg",
     photoHover: "/team/ann-haa-fatema-hover.png",
     social: { linkedin: "https://www.linkedin.com/in/ann-haa-5802b735b/", },
   },
