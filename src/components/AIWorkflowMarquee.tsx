@@ -51,7 +51,7 @@ export function AIWorkflowMarquee() {
           <motion.div
             className="flex items-center gap-20 whitespace-nowrap"
             animate={{ x: ["2%", "-50%"] }}
-            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
           >
             {[...items, ...items].map((item, i) => (
               <span
