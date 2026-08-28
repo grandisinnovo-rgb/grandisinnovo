@@ -31,7 +31,7 @@ export function AIWorkflowMarquee() {
           background:
             "linear-gradient(90deg, rgba(40,56,137,0.35) 0%, rgba(74,108,247,0.35) 35%, rgba(63,17,25,0.3) 70%, rgba(40,56,137,0.35) 100%)",
           backgroundSize: "300% 100%",
-          animation: "promoBgShift 12s ease-in-out infinite",
+          animation: "promoBgShift 30s ease-in-out infinite",
         }}
       />
       {/* Frosted glass layer */}
