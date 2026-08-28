@@ -54,7 +54,7 @@ export const team: TeamMember[] = [
     role: "CEO & Founder | Web Developer",
     bio: "Leading Grandis Innovo's vision by building innovative and scalable digital solutions.",
     photo: "/team/ini-tom.png",
-    photoHover: "/Team/ini-tom-hover.png",
+    photoHover: "/team/ini-tom-hover.png",
     social: { linkedin: "https://www.linkedin.com/in/ini-toma1/", github: "https://github.com/initom332" },
   },
     {
