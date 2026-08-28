@@ -36,8 +36,9 @@ const footerLinks = {
     { label: "PC Sales & Supply", href: "/services#sales" },
   ],
   social: [
-    { icon: Twitter, label: "Twitter", href: "https://x.com/GrandisInnovo" },
-    { icon: Github, label: "GitHub", href: "https://github.com/grandisinnovo-rgb/grandisinnovo" },
+    { icon: Twitter, label: "Twitter", href: "#" },
+    { icon: Linkedin, label: "LinkedIn", href: "#" },
+    { icon: Github, label: "GitHub", href: "#" },
     { icon: Instagram, label: "Instagram", href: "#" },
   ],
 };
@@ -82,7 +83,7 @@ export default function Footer() {
                 <span className="font-display font-extrabold text-lg text-[var(--text-primary)] tracking-tight block">
                   Grandis
                 </span>
-                <span className="font-display font-semibold text-xs text-brand-blue dark:text-[#4a6cf7] tracking-widest uppercase">
+                <span className="font-display font-semibold text-xs text-brand-blue dark:text-[#4a6cf7] tracking-widest uppercase -mt-1 block">
                   Innovo
                 </span>
               </div>
