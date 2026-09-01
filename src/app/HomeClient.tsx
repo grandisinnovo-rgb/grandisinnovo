@@ -28,8 +28,8 @@ const stats = [
 
 const testimonials = [
   { quote: "Grandis Innovo transformed our online presence completely. The website they built drove a 3x increase in leads within the first month. Genuinely impressive work.", author: "King Akinmarin",     role: "CEO, LINDS",       avatar: "AA" },
-  { quote: "Fast, professional, and surprisingly affordable. They understood exactly what our startup needed and delivered beyond expectations. We'll keep coming back.",         author: " Tom Bassey ", role: "Founder, Sparkling Cleaners",          avatar: "CA" },
-  { quote: "Their tech support team is a lifesaver. When our office systems crashed before a big pitch, they had everything up in 2 hours. Absolute legends.",                  author: "Burnan Miri",      role: "Operations Manager, Mart", avatar: "FY" },
+  { quote: "Fast, professional, and surprisingly affordable. They understood exactly what our startup needed and delivered beyond expectations. We'll keep coming back.",         author: " Tom Bassey ", role: "Founder, Sparkling Cleaners",          avatar: "TB" },
+  { quote: "Their tech support team is a lifesaver. When our office systems crashed before a big pitch, they had everything up in 2 hours. Absolute legends.",                  author: "Burnan Miri",      role: "Operations Manager, Mart", avatar: "BM" },
 ];
 
 /* ─── Typewriter hook ────────────────────────────────────────────────────── */
